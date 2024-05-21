@@ -2,8 +2,10 @@ let realForm = document.querySelector('form');
 let emailVal = document.querySelector('#email');
 let passwordVal = document.querySelector('#password');
 
+const BASE_URL = 'https://mira-backend.azurewebsites.net/api/auth/login';
+
 async function postLogin(email, password) {
-    const response = await fetch("https://mira-backend.azurewebsites.net/api/auth/login", {
+    const response = await fetch(BASE_URL, {
       method: "POST",
       body: { email, password },
     });
@@ -24,3 +26,4 @@ realForm.addEventListener('submit', async (e) => {
         console.log(err);
     }
 })
+
