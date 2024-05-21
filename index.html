@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <form id="login-form" action="POST">
-        <div>
+        <div style="display: flex; flex-direction: column; gap: 15px;">
             <div>
-                <label for="email"></label>
+                <label for="email">Email</label>
 
                 <div>
-                    <input type="email" id="email" placeholder="enter email address" style="padding: 2px 3px; border-radius: 7px; outline: none;">
+                    <input type="email" id="email" placeholder="enter email address"
+                        style="padding: 6px 6px; border-radius: 5px; outline: none;" required>
                 </div>
             </div>
 
@@ -23,7 +26,8 @@
                 </label>
 
                 <div>
-                    <input type="password" id="password" placeholder="Enter password" style="padding: 2px 3px; border-radius: 7px; outline: none;">
+                    <input type="password" id="password" placeholder="Enter password"
+                        style="padding: 2px 3px; border-radius: 7px; outline: none;" required>
                 </div>
             </div>
 
@@ -32,8 +36,9 @@
             </div>
         </div>
     </form>
-    
+
 
     <script src="./main.js"></script>
 </body>
+
 </html>
